@@ -1,0 +1,63 @@
+//Big buttons
+
+$bigbutton-border: 0.8rem;
+$bigbutton-border-hover: 0.6rem;
+$bigbutton-border-active: 0.3rem;
+
+
+.big-button {
+  background: $purple;
+  border: none;
+  border-bottom: $bigbutton-border solid darken($purple, 10%);
+  color: #fff;
+  font-weight: bold;
+  font-size: $l-size;
+  margin-bottom: $m-size;
+  padding: 2.4rem;
+  width: 100%;
+  transition: opacity 250ms;
+  outline: 0;
+}
+
+.big-button:disabled {
+  opacity: 0.5;
+}
+
+.big-button:hover{
+  border-top: ($bigbutton-border - $bigbutton-border-hover) solid $dark-blue;
+  border-bottom: $bigbutton-border-hover solid darken($purple, 10%);
+}
+
+.big-button:active{
+  border-top: ($bigbutton-border - $bigbutton-border-active) solid $dark-blue;
+  border-bottom: $bigbutton-border-active solid darken($purple, 10%);
+}
+
+
+.button{
+  background-color: $purple;
+  border: none;
+  border-bottom: 0.4rem solid darken($purple, 10%);
+  color: #fff;
+  font-weight: 500;
+  padding: $s-size;
+  outline: 0;
+  transition: opacity 250ms;
+  &:hover{
+    opacity: 0.85;
+  }
+}
+
+.button--link {
+  background: none;
+  border: none;
+  color: $off-white;
+  padding: 0;
+}
+
+
+@media (min-width: $desktop-breakpoint) {
+  .big-button {
+    margin-bottom: $xl-size;
+  }
+}
