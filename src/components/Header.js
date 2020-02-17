@@ -11,7 +11,7 @@ const Header = (props) => (
 );
 
 Header.defaultProps = {
-  title: 'Indecision'
+  title: 'Decide For Me'
 };
 
 export default Header;
